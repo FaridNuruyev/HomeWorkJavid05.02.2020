@@ -1,12 +1,13 @@
-
-html{
-    
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
 }
+
 /*NAV BAR*/
+
 .navbar {
     background-image: url(/img/left-menu-background.jpg);
     position: fixed;
@@ -23,7 +24,7 @@ body{
 }
 
 .menu {
-    padding: 0 5px ;
+    padding: 0 5px;
 }
 
 .menu>ul li {
@@ -33,10 +34,9 @@ body{
 }
 
 .menu>ul a {
-     /*bunu qoymaqda meqsedim saytda fikir verseniz home,
+    /*bunu qoymaqda meqsedim saytda fikir verseniz home,
      about falan olanlarin yalniz uzerine getirdikde hover ve ya click olunmur,
      hem de oz tutdugu setre mouse'u getirdikde hover ve ya click olur*/
-   
     display: block;
     text-decoration: none;
     color: white;
@@ -47,15 +47,20 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
-.menu>ul a:hover{
-    color:#d34e35 ;
+
+.menu>ul a:hover {
+    color: #d34e35;
 }
-.pagesMenu>ul{
+
+.pagesMenu>ul {
     padding: 0;
 }
-.open>ul a{
-    font-size: 10px;;
+
+.open>ul a {
+    font-size: 10px;
+    ;
 }
+
 .menu>ul>li>a>.fa-home, #home {
     color: #d34e35;
 }
@@ -69,14 +74,16 @@ body{
     float: right;
     margin-top: 10px;
     margin-right: 20px;
-    
 }
+
 /*Social media*/
-.links{
+
+.links {
     padding: 0;
     margin-left: 50px;
 }
-.links>h5{
+
+.links>h5 {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -84,15 +91,19 @@ body{
     font-weight: 400;
     margin: 0;
 }
-.links>.socialMedia>ul{
+
+.links>.socialMedia>ul {
     margin: 0;
     padding: 0;
 }
-.links>.socialMedia li{
+
+.links>.socialMedia li {
     list-style-type: none;
     display: inline-block;
 }
-.links>.socialMedia a{  /*bunu yuxaridaki a ile yanasi yazdim goturmedi onun ucun ashagida ayrica yazdim*/
+
+.links>.socialMedia a {
+    /*bunu yuxaridaki a ile yanasi yazdim goturmedi onun ucun ashagida ayrica yazdim*/
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -103,37 +114,75 @@ body{
     transition: 0.5s;
     padding: 7px;
 }
-.links>.socialMedia>.fa-twitter{
+
+.links>.socialMedia>.fa-twitter {
     padding: 0;
 }
-.links>.socialMedia a:hover{
+
+.links>.socialMedia a:hover {
     color: #393939;
 }
+
 /*CONTEXT*/
 
-.context{
+.context {
     margin-left: 288px;
 }
-.context>.product{
+
+.context>.product {
     border: 1px solid rgb(238, 238, 238);
     width: 375px;
     height: 375px;
     float: left;
 }
-.product>img{
-   padding: 0 40px;
-   width: 300px;
-   height: 300px;
-   transition: 0.4s;
-}   
-.product>img:hover{
+
+.product img {
+    padding: 0 40px;
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+}
+
+.pseudoIcon {
+    position: relative;
+    transition: 0.4s;
+}
+
+.product .pseudoIcon i {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.pseudoIcon:hover .overlay {
     opacity: 0.5;
 }
-.productInfo{
-    padding:5px 20px 0 20px
+
+.pseudoIcon:hover i {
+    display: block;
+    cursor: pointer;
+    color: #d34e35;
+    font-size: 14px;
+    line-height: 33px;
 }
-.productName>a{
-    
+
+.productInfo {
+    padding: 5px 20px 0 20px
+}
+
+.productName>a {
     text-decoration: none;
     color: #555555;
     font-family: 'Montserrat', sans-serif;
@@ -143,10 +192,12 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
-.productName>a:hover{
+
+.productName>a:hover {
     color: #d34e35;
 }
-.price{
+
+.price {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -156,10 +207,12 @@ body{
     color: #d34e35;
     cursor: pointer;
 }
-.btn{
+
+.btn {
     float: right;
 }
-.btn>a{
+
+.btn>a {
     text-decoration: none;
     color: #555555;
     font-family: 'Montserrat', sans-serif;
@@ -168,7 +221,8 @@ body{
     font-weight: 400;
     cursor: pointer;
 }
-.btn>a:hover{
+
+.btn>a:hover {
     background-color: #d34e35;
     color: white;
 }
