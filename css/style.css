@@ -5,11 +5,9 @@ html {
 body {
     margin: 0;
 }
-
 /*NAV BAR*/
-
 .navbar {
-    background-image: url(/img/left-menu-background.jpg);
+    background-image: url(../img/left-menu-background.jpg);
     position: fixed;
     width: 290px;
     height: 100vh;
@@ -58,7 +56,7 @@ body {
 
 .open>ul a {
     font-size: 10px;
-    ;
+    
 }
 
 .menu>ul>li>a>.fa-home, #home {
@@ -122,13 +120,10 @@ body {
 .links>.socialMedia a:hover {
     color: #393939;
 }
-
 /*CONTEXT*/
-
 .context {
     margin-left: 288px;
 }
-
 .context>.product {
     border: 1px solid rgb(238, 238, 238);
     width: 375px;
